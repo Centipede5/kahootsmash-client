@@ -233,6 +233,7 @@
               if (!results[2]) return '';
               return decodeURIComponent(results[2].replace(/\+/g, ' '));
           }
+          var urls = ["selective-spinach.glitch.me","kahootsmasher-main.glitch.me","spice-culotte.glitch.me"];
           $('#myform').submit(function(e){
             e.preventDefault();
             document.getElementById("output").innerHTML = "<i class='w3-xxlarge w3-text-theme fa fa-spinner w3-spin'></i>";
@@ -249,7 +250,7 @@
               document.getElementById("output").innerHTML ="<i class='w3-xxlarge w3-text-theme fa fa-spinner w3-spin'></i><p class='w3-animate-opacity'>Validating game PIN...</p>"
             },4000);
             $.ajax({
-              url:'//kahootsmasher-main.glitch.me/submit-form',
+              url:`//${urls[Math.floor(Math.random()*urls.length)]}/submit-form`,
               type:'post',
               data:$('#myform').serialize(),
               success:function(r){
