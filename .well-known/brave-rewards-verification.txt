@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: kahootsmasher.club
+Token: 34750636227c98b5ebdec4af3d89f762724db4e9abd78fe5671f11dd3a8e10d9
